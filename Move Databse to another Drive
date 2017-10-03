@@ -1,1 +1,16 @@
-Move 
+1 Method One
+Detach and Attach 
+2 Method Two
+Backup and Restore
+3.Method Third
+Alter Command
+
+Setps in Alter Command for Moving Databse to another Drive
+ a) Set Database offline
+    Alter Database DBNAME SET OFFLINE
+ b) To Check Database location
+    Select * from databasename.sys.database_files
+    
+  c) Alter Database DBNAme Modify File (Name = 'DBName, FileName ='E\Folder\DBNAME.mdf') GO  for mdf DD slly for LDF DB
+  
+  d ) Alter Database DBNAME SET online
